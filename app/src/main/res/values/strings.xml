@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">Data Binding Example</string>
+    <string name="btn_comprar">Comprar</string>
+    <string name="stock_icon_img">stock_icon</string>
 </resources>
