@@ -27,9 +27,11 @@ class OfferViewModel : ViewModel() {
 
     val disponibility : LiveData<Disponibility> = Transformations.map(_stock){
         when{
-            it > 45 -> Disponibility.HIGH
-            it > 20 -> Disponibility.NORMAL
-            else -> Disponibility.LOW
+            it > 25 -> Disponibility.HIGH
+            it > 10 -> Disponibility.NORMAL
+            else -> {
+                Disponibility.LOW
+            }
         }
     }
 
